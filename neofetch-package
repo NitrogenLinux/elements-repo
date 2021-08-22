@@ -1,0 +1,15 @@
+#!/bin/bash
+export PORTER=Tekniqall
+export Developer=DylanAraps
+export Package=neofetch
+
+
+echo Package: $Package
+echo Developer: $Developer
+echo Ported By: $PORTER
+select yn in "Yes" "No"; do
+    case $yn in
+        Yes ) git clone https://github.com/dylanaraps/neofetch.git; cd neofetch; make; make install; cd ..; mv neofetch /usr/src/; break;;
+        No ) exit;;
+    esac
+done
