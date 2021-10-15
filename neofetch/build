@@ -1,9 +1,7 @@
 #!/bin/bash
-trap '' 2  
 git clone https://github.com/dylanaraps/neofetch.git
 cd neofetch 
 make
 make install
 cd ..
 mv neofetch /usr/src/
-trap 2
