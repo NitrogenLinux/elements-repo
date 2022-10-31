@@ -1,4 +1,0 @@
-cd /usr/src/neofetch
-sudo make uninstall
-cd
-sudo rm -rf /usr/src/neofetch
